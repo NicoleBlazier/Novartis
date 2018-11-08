@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Novartis</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="header">
+    <div class="profile">
+        <h1>SALES REP MANAGER</h1>
+        <img src="manager.jpg" alt="manager">
+    </div>
+  </div>
+  <div class="content">
+    <div class="inputbox">
+      <div class="entries">
+        <div class="entry titles">
+            <p class="title year">Year</p>
+            <p class="title month">Month</p>
+            <p class="title medicine">Medicine</p>
+            <p class="title units">Units</p>
+            <p class="title salesrep">Sales Rep</p>
+        </div>
+        <div class="entry">
+          <div id="year" class="year">2018</div>
+          <select class="month" name="month" id="month">
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+          </select>
+          <select class="medicine" name="medicine" id="medicine">
+              <option value="Medicine 1">Medicine 1</option>
+              <option value="Medicine 2">Medicine 2</option>
+              <option value="Medicine 3">Medicine 3</option>
+              <option value="Medicine 4">Medicine 4</option>
+              <option value="Medicine 5">Medicine 5</option>
+          </select>
+          <input class="units" type="number" id="units" />
+          <select class="salesrep" name="salesrep" id="salesrep">
+            <option value="Bob">Bob</option>
+            <option value="John">John</option>
+            <option value="Mike">Mike</option>
+            <option value="Carl">Carl</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="addButton">ADD</button>
+      </div>
+
+    </div>
+  </div>
+  <table id="records">
+    <tr>
+        <th><a class="sort-by">Medicine</a></th>
+        <th><a class="sort-by">Quantity</a></th>
+        <th><a class="sort-by">Month</a></th>
+        <th><a class="sort-by">Year</a></th>
+        <th><a class="sort-by">Sales Representative</a></th>
+    </tr>
+  </table>
+
+  <script src="index.js"></script> 
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</body>
+</html>
